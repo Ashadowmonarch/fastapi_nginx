@@ -1,0 +1,14 @@
+services:
+  app1:
+    build: .
+    environment:
+      - APP_NAME=App1
+    ports:
+      - "8001:8000" # Make 8000 -> 8001
+
+  app2:
+    build: .
+    environment:
+      - APP_NAME=App2
+    ports:
+      - "8002:8000" # Make 8000 -> 8001
